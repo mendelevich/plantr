@@ -44,7 +44,6 @@ Gardener.create({ name: 'Eve', age: 100 })
   .then(gardener => {
     return Plot.create({ size: 25, shaded: false, gardenerId: gardener.id });
   })
-
   .then(plot => {
     console.log('Plot created!');
   });
